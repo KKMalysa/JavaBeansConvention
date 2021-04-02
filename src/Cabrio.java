@@ -4,6 +4,7 @@ public class Cabrio {
     private boolean roofOpen;
     private boolean isMoving;
 
+
     public Cabrio(String name, String brand) {
         this.name = name;
         this.brand = brand;
@@ -39,10 +40,10 @@ public class Cabrio {
     }
 
     public void setRoofOpen(boolean roofOpen) {
-        if(isMoving = false){
-            this.roofOpen = roofOpen;
-        }else {
+        if(isMoving){  //znaleziony bład: if(isMoving = true)
             System.out.println(" You can't open/close roof while moving");
+        }else {
+            this.roofOpen = roofOpen;
         }
 
     }

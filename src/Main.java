@@ -9,6 +9,7 @@ public class Main {
         System.out.println();
         System.out.println("auto stoi - próbuje otworzyć dach");
         cabrio.setRoofOpen(true);
+        System.out.println(cabrio.isRoofOpen());
 
 //        cabrio.setMoving(true);
 //        cabrio.setRoofOpen(false);
